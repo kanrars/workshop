@@ -1,1 +1,3 @@
 This is a line that I'am appending to a file
+hello workd
+hello world
