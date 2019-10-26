@@ -1,0 +1,213 @@
+    1  nano test.txt
+    2  nano test.txt
+    3  exit
+    4  man split
+    5  split ---help
+    6  man split
+    7  cd
+    8  pwd
+    9  cd SDC_10-27-2018/
+   10  ls
+   11  nano script.sh
+   12  scrip.sh
+   13  chmod 755 script.sh 
+   14  ls -al script.sh 
+   15  nano script.sh 
+   16  nano script.sh 
+   17  bash script.sh 
+   18  man split
+   19  exit
+   20  echo pac
+   21  date
+   22  ls
+   23  clear
+   24   cd Desktop/
+   25  ls
+   26  unzip workshop.zip 
+   27  ls
+   28  cd workshop
+   29  ls
+   30  cd unix_intro/
+   31  ls
+   32  date
+   33  date -u
+   34  date u
+   35  clear
+   36  head
+   37  head example.txt 
+   38  head -n 5 example.txt 
+   39  head --help
+   40  man head
+   41  man head
+   42  head --jead
+   43  head -hjead
+   44  head -head
+   45  head --head
+   46  echo $HOME
+   47  pwd
+   48  cd
+   49  pwd
+   50  cd /
+   51  pwd
+   52  cd
+   53  pwd
+   54  cd ~/Desktop/workshop/unix_intro/
+   55  pwd
+   56  ls
+   57  head experiment/notes.txt 
+   58  cd experiment/
+   59  cd ..
+   60  cd  experiment/
+   61  clear
+   62  cd ..
+   63  ld
+   64  ls
+   65  cd experiment/
+   66  pwd
+   67  ls
+   68  head notes.txt 
+   69  head notes.txt 
+   70  pwd
+   71  cd ..
+   72  ls
+   73  head example.txt 
+   74  tail example.txt 
+   75  less example.txt 
+   76  wc example.txt 
+   77  wc -l example.txt 
+   78  wc -w example.txt 
+   79  wc -c example.txt 
+   80  wc --help
+   81  man wc
+   82  clear
+   83  cp example.txt example_copy.txt 
+   84  ls
+   85  cp example.txt data/
+   86  ls data
+   87  mv data/example.txt  data/example_2.txt 
+   88  ls data
+   89  ls
+   90  mv example_copy.txt experiment/
+   91  ls 
+   92  ls experiment/
+   93  ls experiment/
+   94  clear
+   95  ls
+   96  nano sample_names.txt
+   97  ls
+   98  less sample_names.txt 
+   99  head sample_names.txt 
+  100  ls
+  101  mkdir subset
+  102  ls
+  103  rmdir subset/
+  104  rmdir experiment/
+  105  man rm
+  106  rm --help
+  107  ls
+  108  ls
+  109  ls | wc -l example.txt 
+  110  ls | wc -l
+  111  ls data
+  112  ls data/all_samples/
+  113  ls data/all_samples/ | wc -l
+  114  ls > directorycontents.txt
+  115  ls
+  116  less directorycontents.txt 
+  117  clear
+  118  ls experiment/ > directorycontents.txt 
+  119  head directorycontents.txt 
+  120  ls >> directorycontents.txt 
+  121  head directorycontents.txt 
+  122  cd data
+  123  ls
+  124  cd all_samples/
+  125  ls
+  126  ls *.txt | wc -l
+  127  ls *.txt | wc -l
+  128  ls *.txt 
+  129  ls *.tsv
+  130  ls *.fq
+  131  ls *.txt | wc -l
+  132  mkdir fastq_files
+  133  ls
+  134  ls
+  135  ls
+  136  ls
+  137  mkdir fastq_files
+  138  ls *.fq
+  139  ls *.fq | wc -l
+  140  mv *.fq fastq_files/
+  141  ls fastq_files/
+  142  ls fastq_files/ | wc -l
+  143  history
+  144  history | tail
+  145  cd fastq_files/
+  146  ls
+  147  ls | wc -l
+  148  ls sample_1*.fq
+  149  ls sample_1*.fq | wc -l
+  150  ls sample_1?.fq | wc -l
+  151  ls sample_1?.fq 
+  152  pwd
+  153  cd ../../..
+  154  pwd
+  155  ls
+  156  cd six_commands/
+  157  ls
+  158  head gene_annotations.tsv 
+  159  head -n 1 gene_annotations.tsv 
+  160  wc -l gene_annotations.tsv 
+  161  cut --help
+  162  cut -f 1 gene_annotations.tsv 
+  163  cut -f 1 gene_annotations.tsv | wc -l
+  164  cut -f 1 gene_annotations.tsv | head
+  165  cut -f 1,3 gene_annotations.tsv | head
+  166  cut -f 1-3 gene_annotations.tsv | head
+  167  cut -d , -f 1-3 gene_annotations.csv | head
+  168  ls
+  169  cut -d , -f 1-3 example_gene_annotations.csv | head
+  170  clear
+  171  cut -f 1-2 gene_annotations.tsv > IDs_and_annotations.tsv
+  172  ls
+  173  head colors.txt 
+  174  grep  blue colors.txt 
+  175  grep re colors.txt 
+  176  grep K09765 gene_annotations.tsv 
+  177  grep K18979 gene_annotations.tsv 
+  178  grep -c K18979 gene_annotations.tsv 
+  179  grep --help
+  180  clear
+  181  clear
+  182  paste colores.txt colors.txt
+  183  head colors.txt 
+  184  head colores.txt 
+  185  paste colores.txt colors.txt
+  186  ls
+  187  my_var=ANGUS
+  188  echo $my_var 
+  189  my_var
+  190  $my_var 
+  191  echo $my_var 
+  192  echo my_var
+  193  echo $my_var 
+  194  cd ..
+  195  ls
+  196  for item in earth mars venus; do    echoeecec
+  197  for item in earth mars venus ; do     echo $item; done
+  198  for i in range 5; do     $i; done
+  199  for i in range(5); do     $i; done
+  200  for fruits in mango guava pear apple; do echo $fruits; done
+  201  for fruits in mango guava pear apple; do echo $fruits; done
+  202  for item in earth mars venus ; do     echo $item;echo $item > planetss.txt; done
+  203  ls
+  204  head planetss.txt 
+  205  for item in earth mars venus ; do     echo $item;echo $item >> planetss.txt; done
+  206  head planetss.txt 
+  207  cat planetss.txt 
+  208  for item in $(cat planetss.txt ); do echo $item ; done
+  209  echo $(cat planetss.txt )
+  210  for list in ls; do echo $list; done
+  211  for list in $(ls); do echo $list; done
+  212  clear
+  213  history > history_unix.txt
